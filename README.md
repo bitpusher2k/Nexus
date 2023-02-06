@@ -22,7 +22,4 @@ Google - e.g.: Ask-Google "How to use Google"
 DuckDuckGo - e.g.: Ask-DDG "How to use DuckDuckGo"
 Kagi - e.g.: Ask-Kagi "How to use Kagi"
 
-Script will open a browser window of the Google/DuckDuckGo/Kagi search query. 
-You must be signed in to use Kagi.
-Choose the browser used for each search by name or path by modifying which
-"Start-Process" line is used by each search function. 
+![Image](../blob/main/Examples.png?raw=true)
