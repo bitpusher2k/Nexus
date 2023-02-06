@@ -22,4 +22,4 @@ Google - e.g.: Ask-Google "How to use Google"
 DuckDuckGo - e.g.: Ask-DDG "How to use DuckDuckGo"
 Kagi - e.g.: Ask-Kagi "How to use Kagi"
 
-![Image](../Examples.png?raw=true)
+![Image](../main/Examples.png?raw=true)
