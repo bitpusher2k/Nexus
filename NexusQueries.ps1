@@ -50,8 +50,8 @@ Function Ask-Wolfram {
         ValueFromPipeline = $true
         )]
     [String]$Question,
-	#API key is here in plain text. Could be stashed as a secret with the 
-	#Microsoft.PowerShell.SecretManagement module & retrieved with something like:
+    #API key is here in plain text. Could be stashed as a secret with the 
+    #Microsoft.PowerShell.SecretManagement module & retrieved with something like:
     #[String]$apiKey = (Get-Secret -Name WolframAlphaAPI | ConvertFrom-SecureString -AsPlainText),
     [String]$apiKey = 'XXXXXXXX'
     )
@@ -80,8 +80,8 @@ function Ask-OpenAI {
         ValueFromPipeline = $true
         )]
     [String]$Question,
-	#API key is here in plain text. Could be stashed as a secret with the 
-	#Microsoft.PowerShell.SecretManagement module & retrieved with something like:
+    #API key is here in plain text. Could be stashed as a secret with the 
+    #Microsoft.PowerShell.SecretManagement module & retrieved with something like:
     #[String]$apiKey = (Get-Secret -Name ChatGptAPI | ConvertFrom-SecureString -AsPlainText),
     [String]$apiKey = "XXXXXXXX",
     [ValidateSet("text-davinci-003", "code-cushman-001", "code-davinci-001")]
@@ -124,8 +124,8 @@ function Ask-AIimage {
         ValueFromPipeline = $true
         )]
     [String]$Question,
-	#API key is here in plain text. Could be stashed as a secret with the 
-	#Microsoft.PowerShell.SecretManagement module & retrieved with something like:
+    #API key is here in plain text. Could be stashed as a secret with the 
+    #Microsoft.PowerShell.SecretManagement module & retrieved with something like:
     #[String]$apiKey = (Get-Secret -Name ChatGptAPI | ConvertFrom-SecureString -AsPlainText),
     [String]$apiKey = "XXXXXXXX",
     [Validaterange(1,10)]
