@@ -35,7 +35,7 @@
 #
 # To load these functions every time PowerShell is started, check where the
 # CurrentUserCurrentHost profile is located with this command:
-# foreach ($profileLocation in ($PROFILE | Ask-Member -MemberType NoteProperty).Name) {Write-Host "$($profileLocation): $($PROFILE.$profileLocation)"}
+# foreach ($profileLocation in ($PROFILE | Get-Member -MemberType NoteProperty).Name) {Write-Host "$($profileLocation): $($PROFILE.$profileLocation)"}
 # Likely the location is something like:
 # %UserProfile%\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 # And add a line in your profile to dot-source the full path to this script. e.g.:
