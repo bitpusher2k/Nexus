@@ -253,33 +253,3 @@ function Ask-Kagi {
         # Start-Process -FilePath "C:\Users\FirefoxPortableDeveloper\FirefoxPortable.exe" -ArgumentList "$url" #Open search in specific browser by path
     } 
 }
-
-#This version of the function takes multiple input parameters & merges them into one search query so you don't have to use quotes.
-#function Ask-DDG { 
-#   Begin { 
-#       $query='https://duckduckgo.com/?q=' 
-#       } 
-#
-#   Process { 
-#       if ($args.Count -eq 0) {
-#           "Arguments empty - commiting `$input to `$args" 
-#           Set-Variable -Name args -Value (@($input) | % {$_}) 
-#           "Arguments now equal $args"
-#           $args = $args.Split() 
-#       }
-#       else { 
-#           "Arguments set - Using them" 
-#       }
-#       Write-Host $args.Count, "Argument(s) detected" "Parsing out Arguments: $args"
-#       for ($i=0; $i -lt $args.Count; $i++){
-#           "Arg $i `t $($args[$i]) `t Length `t" + $args[$i].Length, " characters"
-#       }
-#       $args | % {$query = $query + "$_+"}
-#   } 
-#
-#   End { 
-#       $url = $query.Substring(0,$query.Length-1) 
-#       "Final Search will be $url `nInvoking..." 
-#       start "$url" 
-#   } 
-#}
